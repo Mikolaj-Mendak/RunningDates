@@ -1,0 +1,14 @@
+.register-comopnent-header{
+    text-align: center;
+    color: rgb(45, 187, 40);
+}
+
+.register-button{
+    background-color: rgb(45, 187, 40);
+    color: white;
+    margin-right: 1em;
+}
+
+.register-form-input{
+    margin-bottom: 1em;
+}
