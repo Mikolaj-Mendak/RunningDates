@@ -30,6 +30,7 @@ namespace API.Controllers
         public async Task<ActionResult<UserDto>> Register(RegisterDto registerDto)
         {
             if (await UserExists(registerDto.Username)) return BadRequest("Username is taken");
+            if (registerDto.Password.Length > 8 || registerDto.Password.Length < 4) return BadRequest("Invalid size of password");
 
             using var hmac = new HMACSHA512();
 
