@@ -22,6 +22,7 @@ namespace API.Entities
                     ValidateIssuer = false,
                     ValidateAudience = false
                 };
+                
             });
             
             return services;
