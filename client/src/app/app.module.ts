@@ -20,6 +20,8 @@ import { MemberEditComponent } from './members/member-edit/member-edit.component
 import { PhotoEditorComponent } from './members/photo-editor/photo-editor.component';
 import { TextInputComponent } from './_forms/text-input/text-input.component';
 import { DatePickerComponent } from './_forms/date-picker/date-picker.component';
+import { TimeagoModule } from 'ngx-timeago';
+import { MemeberMessagesComponent } from './members/memeber-messages/memeber-messages.component';
 
 @NgModule({
     declarations: [
@@ -36,8 +38,10 @@ import { DatePickerComponent } from './_forms/date-picker/date-picker.component'
         PhotoEditorComponent,
         TextInputComponent,
         DatePickerComponent,
+        MemeberMessagesComponent,
     ],
     imports: [
+        TimeagoModule.forRoot(),
         BrowserModule,
         AppRoutingModule,
         HttpClientModule,
